@@ -22,7 +22,7 @@ CREATE TABLE orders_data
 (
 	order_id int PRIMARY KEY,
 	customer_id varchar(5) UNIQUE REFERENCES employees_data(employee_id),
-	employee_id int UNIQUE REFERENCES customers_data(customer_id),
+	employee_id int UNIQUE REFERENCES employees_data(employee_id),
 	order_date date NOT NULL,
 	ship_city varchar(50) NOT NULL
 );
