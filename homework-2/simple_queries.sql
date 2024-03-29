@@ -9,7 +9,7 @@ SELECT order_id, (shipped_date - order_date) AS delivery FROM orders;
 SELECT DISTINCT city FROM customers;
 
 -- 4. количество заказов (таблица orders)
-SELECT COUNT(*) AS orders_count FROM orders;
+SELECT COUNT(*) FROM orders;
 
 -- 5. количество стран, в которые отгружался товар (таблица orders, колонка ship_country)
-SELECT COUNT(DISTINCT(ship_country)) AS country_count FROM orders;
+SELECT COUNT(DISTINCT ship_country) FROM orders;
