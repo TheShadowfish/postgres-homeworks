@@ -1,6 +1,7 @@
 -- Подключиться к БД Northwind и сделать следующие изменения:
 -- 1. Добавить ограничение на поле unit_price таблицы products (цена должна быть больше 0)
-
+ALTER TABLE products
+    ALTER COLUMN unit_price SET NOT NULL;
 
 -- 2. Добавить ограничение, что поле discontinued таблицы products может содержать только значения 0 или 1
 
