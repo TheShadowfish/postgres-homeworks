@@ -37,5 +37,4 @@ INSERT INTO student (first_name, last_name, birth_date, phone) VALUES
     ('Сидорова', 'Евгения', '21.05.1994', '8-987-876-54-31');
 
 -- 7. Удалить все данные из таблицы со сбросом идентификатор в исходное состояние
-DELETE FROM student;
-ALTER SEQUENCE student_student_id_seq RESTART WITH 1;
+TRUNCATE TABLE student RESTART IDENTITY;
